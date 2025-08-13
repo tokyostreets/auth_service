@@ -1,7 +1,7 @@
 # auth_service
 Сервис Авторизации на FastAPI
 
-#ВАЖНО
+# ВАЖНО
 Не забудьте применить миграции при запуске: docker-compose exec web alembic upgrade head
 
 # Технологии
