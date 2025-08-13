@@ -1,6 +1,8 @@
 # auth_service
 Сервис Авторизации на FastAPI
 
+#ВАЖНО
+Не забудьте применить миграции при запуске: docker-compose exec web alembic upgrade head
 
 # Технологии
 Python 3.12
@@ -29,4 +31,3 @@ SECRET_KEY=SECRET_KEY
 ALGORITHM=HS256 
 ACCESS_TOKEN_EXPIRE_MINUTES=30
 
-Не забудьте применить миграции при запуске: docker-compose exec web alembic upgrade head
