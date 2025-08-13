@@ -13,7 +13,6 @@ router = APIRouter()
 
 @router.post("/register", response_model=User)
 def register_user(user_in: UserCreate, db: Session = Depends(get_db)):
-    # ... код регистрации остается без изменений ...
     user = db.query(models.User).filter(models.User.email == user_in.email).first()
     if user:
         raise HTTPException(
